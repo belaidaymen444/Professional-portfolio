@@ -91,8 +91,8 @@ export default function Hero() {
           >
             {[
               { icon: Github, href: 'https://github.com/belaidaymen444?focus_contribution_menu=true', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:alex@example.com', label: 'Email' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/belaid-aymen-azeddine-846139278/', label: 'LinkedIn' },
+              { icon: Mail, href: 'belaidaymen444@gmail.com', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

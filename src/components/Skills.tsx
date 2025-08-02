@@ -7,36 +7,35 @@ const skills = [
   {
     category: 'Frontend',
     technologies: [
-      { name: 'React', level: 95, color: '#61DAFB' },
-      { name: 'TypeScript', level: 90, color: '#3178C6' },
-      { name: 'Next.js', level: 88, color: '#000000' },
-      { name: 'Tailwind CSS', level: 92, color: '#06B6D4' },
-      { name: 'Three.js', level: 75, color: '#000000' },
+      { name: 'React', level: 80, color: '#61DAFB' },
+      { name: 'TypeScript', level: 70, color: '#3178C6' },
+      { name: 'Next.js', level: 70, color: '#000000' },
+      { name: 'Tailwind CSS', level: 80, color: '#06B6D4' },
+      { name: 'Sveltekit', level: 60, color: '#FF3E00' },
     ],
   },
   {
     category: 'Backend',
     technologies: [
-      { name: 'Node.js', level: 88, color: '#339933' },
-      { name: 'Express', level: 85, color: '#000000' },
-      { name: 'PostgreSQL', level: 80, color: '#336791' },
-      { name: 'MongoDB', level: 82, color: '#47A248' },
-      { name: 'GraphQL', level: 78, color: '#E10098' },
+      { name: 'Node.js', level: 80, color: '#339933' },
+      { name: 'Express', level: 80, color: '#000000' },
+      { name: 'PostgreSQL', level: 70, color: '#336791' },
+      { name: 'MySQL', level: 50, color: '#F29111' },
+      { name: 'NestJS', level: 20, color: '#00C3E8' },
+      { name: 'Python', level: 25, color: '#ffde57' },
     ],
   },
   {
     category: 'Tools & Cloud',
     technologies: [
-      { name: 'Docker', level: 85, color: '#2496ED' },
-      { name: 'AWS', level: 80, color: '#FF9900' },
-      { name: 'Git', level: 95, color: '#F05032' },
-      { name: 'Vite', level: 90, color: '#646CFF' },
-      { name: 'Figma', level: 85, color: '#F24E1E' },
+      { name: 'Vercel', level: 85, color: '#000000' },
+      { name: 'Cloudinary', level: 65, color: '#3448C5' },
+      { name: 'Git', level: 90, color: '#F05032' },
+      { name: 'Vite', level: 70, color: '#646CFF' },
+      { name: 'Prisma', level: 85, color: '#16A394' },
     ],
   },
 ];
-
-
 
 export default function Skills() {
   return (
