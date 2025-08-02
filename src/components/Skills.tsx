@@ -1,38 +1,40 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import SkillTooltip from './SkillTooltip';
+import { motion } from "framer-motion";
+import SkillTooltip from "./SkillTooltip";
 
 const skills = [
   {
-    category: 'Frontend',
+    category: "Frontend",
     technologies: [
-      { name: 'React', level: 80, color: '#61DAFB' },
-      { name: 'TypeScript', level: 70, color: '#3178C6' },
-      { name: 'Next.js', level: 70, color: '#000000' },
-      { name: 'Tailwind CSS', level: 80, color: '#06B6D4' },
-      { name: 'Sveltekit', level: 60, color: '#FF3E00' },
+      { name: "React", level: 80, color: "#61DAFB" },
+      { name: "TypeScript", level: 70, color: "#3178C6" },
+      { name: "Next.js", level: 70, color: "#000000" },
+      { name: "Tailwind CSS", level: 80, color: "#06B6D4" },
+      { name: "Sveltekit", level: 55, color: "#FF3E00" },
+      { name: "Astro", level: 35, color: "#BC5AE1" },
     ],
   },
   {
-    category: 'Backend',
+    category: "Backend",
     technologies: [
-      { name: 'Node.js', level: 80, color: '#339933' },
-      { name: 'Express', level: 80, color: '#000000' },
-      { name: 'PostgreSQL', level: 70, color: '#336791' },
-      { name: 'MySQL', level: 50, color: '#F29111' },
-      { name: 'NestJS', level: 20, color: '#00C3E8' },
-      { name: 'Python', level: 25, color: '#ffde57' },
+      { name: "Node.js", level: 80, color: "#339933" },
+      { name: "Express", level: 80, color: "#000000" },
+      { name: "PostgreSQL", level: 70, color: "#336791" },
+      { name: "MySQL", level: 50, color: "#F29111" },
+      { name: "NestJS", level: 20, color: "#E0234E" },
+      { name: "Python", level: 25, color: "#ffde57" },
     ],
   },
   {
-    category: 'Tools & Cloud',
+    category: "Tools & Cloud",
     technologies: [
-      { name: 'Vercel', level: 85, color: '#000000' },
-      { name: 'Cloudinary', level: 65, color: '#3448C5' },
-      { name: 'Git', level: 90, color: '#F05032' },
-      { name: 'Vite', level: 70, color: '#646CFF' },
-      { name: 'Prisma', level: 85, color: '#16A394' },
+      { name: "Vercel", level: 85, color: "#000000" },
+      { name: "Cloudinary", level: 65, color: "#3448C5" },
+      { name: "Git", level: 90, color: "#F05032" },
+      { name: "Vite", level: 70, color: "#646CFF" },
+      { name: "Prisma", level: 85, color: "#16A394" },
+      { name: "MaterialTailwind", level: 70, color: "#030712" },
     ],
   },
 ];
@@ -53,7 +55,8 @@ export default function Skills() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-cyan-500 rounded-full mx-auto mb-8" />
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            I work with cutting-edge technologies to build scalable, performant, and beautiful applications.
+            I work with cutting-edge technologies to build scalable, performant,
+            and beautiful applications.
           </p>
         </motion.div>
 
@@ -65,16 +68,23 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           className="mb-20 bg-card/30 rounded-2xl p-8 border border-border"
         >
-          <h3 className="text-2xl font-bold text-center mb-8 gradient-text">3D Technology Icons</h3>
+          <h3 className="text-2xl font-bold text-center mb-8 gradient-text">
+            3D Technology Icons
+          </h3>
           <div className="w-full h-96 flex items-center justify-center bg-gradient-to-br from-primary/10 to-cyan-500/10 rounded-xl border border-border">
             <div className="text-center">
               <div className="text-6xl mb-4">🚀</div>
-              <h4 className="text-xl font-bold gradient-text mb-2">3D Technology Showcase</h4>
-              <p className="text-foreground/60">Interactive 3D icons coming soon!</p>
+              <h4 className="text-xl font-bold gradient-text mb-2">
+                3D Technology Showcase
+              </h4>
+              <p className="text-foreground/60">
+                Interactive 3D icons coming soon!
+              </p>
             </div>
           </div>
           <p className="text-center text-sm text-foreground/60 mt-4">
-            Drag to rotate • Interactive 3D representations of my core technologies
+            Drag to rotate • Interactive 3D representations of my core
+            technologies
           </p>
         </motion.div>
 
@@ -92,7 +102,7 @@ export default function Skills() {
               <h3 className="text-2xl font-bold gradient-text mb-8 text-center">
                 {category.category}
               </h3>
-              
+
               <div className="space-y-6">
                 {category.technologies.map((tech, techIndex) => (
                   <motion.div
@@ -100,7 +110,10 @@ export default function Skills() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: (categoryIndex * 0.2) + (techIndex * 0.1) }}
+                    transition={{
+                      duration: 0.5,
+                      delay: categoryIndex * 0.2 + techIndex * 0.1,
+                    }}
                     className="space-y-2"
                   >
                     <SkillTooltip
@@ -126,9 +139,32 @@ export default function Skills() {
           <h3 className="text-xl font-bold mb-6">Also Experienced With</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Python', 'Java', 'C++', 'Redux', 'Zustand', 'Jest', 'Cypress', 
-              'Webpack', 'Babel', 'ESLint', 'Prettier', 'Vercel', 'Netlify',
-              'Firebase', 'Supabase', 'Prisma', 'Zod', 'React Query', 'Framer Motion'
+              ,
+              "Java",
+              "C++",
+              "ThreeJs",
+              "Jest",
+              "CRUD",
+              "Webpack",
+              "ESLint",
+              "Prettier",
+              "Netlify",
+              "Supabase",
+              "Zod",
+              "Framer Motion",
+              "Photoshop",
+              "Illustrator",
+              "Solidworks",
+              "MaterialUI ",
+              "RESTful APIs",
+              "Docker",
+              "Nginx",
+              "SEO",
+              "Data analysis",
+              "Algorithms",
+              "Problem solving",
+              "graphic design",
+              "Security",
             ].map((skill, index) => (
               <motion.span
                 key={skill}

@@ -119,10 +119,12 @@ export default function About() {
           <h3 className="text-2xl font-bold text-center mb-12">Core Expertise</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { skill: 'Frontend Development', level: 95 },
-              { skill: 'Backend Development', level: 88 },
-              { skill: 'UI/UX Design', level: 82 },
-              { skill: '3D Web Graphics', level: 75 },
+              { skill: 'Frontend Development', level: 75 },
+              { skill: 'Backend Development', level: 70 },
+              { skill: 'Graphic Design', level: 40 },
+              { skill: 'Programmer', level: 80 },
+              { skill: 'Data analysis', level: 50 },
+              { skill: '3D modeling', level: 55 },
             ].map((item, index) => (
               <motion.div
                 key={item.skill}
